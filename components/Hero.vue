@@ -5,8 +5,8 @@
           <div class="col-md-7 my-auto">
             <div>
                 <p class="hero-text">
-                    <span>I’m Max, a Frontend Developer.&nbsp;
-                     I’m a front-end web developer specializing in Javascript, HTML, and CSS/SCSS –
+                    <span>I’m Max,
+                      a front-end web developer specializing in Javascript, HTML, and CSS/SCSS –
                       which basically means I craft websites, web pages, emails, and apps that are responsive on mobile and desktop.
                     </span>
                 </p>
