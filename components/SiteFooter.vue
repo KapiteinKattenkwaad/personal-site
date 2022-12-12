@@ -23,7 +23,7 @@ const brands = ref([
   },
   {
     icon: 'github',
-    link: 'https://github.com/srestraj'
+    link: 'https://github.com/KapiteinKattenkwaad'
   },
   {
     icon: 'codepen',

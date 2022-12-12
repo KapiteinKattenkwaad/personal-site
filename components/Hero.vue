@@ -13,7 +13,9 @@
             </div>
           </div>
           <div class="col-md-5">
+            <div class="img-wrapper">
               <img src="~/assets/img/profile-pic.jpeg" alt="Max Stouten Web Developer" class="img-fluid">
+            </div>
           </div>
         </div>
       </div>
@@ -29,17 +31,29 @@
    aspect-ratio:  1 / 1;
  }
 
- img::after {
-   content: '';
-   position: absolute;
-   top: -20px;
-   left: -20px;
-   width:100%;
-   height:100%;
-   display: block;
-   background-color: yellow;
-   border-radius: 5px;
+ .img-wrapper {
+   position: relative;
 
+ }
+
+ .img-wrapper::after {
+   content: "";
+   position: absolute;
+   top: -10px;
+   left: -10px;
+   z-index: -1;
+   width: 100%;
+   height: 100%;
+   background-image: linear-gradient(120deg, #eaee44, #33d0ff);
+   opacity: .7;
+   border-radius: 5px;
+   transition: all .3s ease-in;
+ }
+
+ .img-wrapper:hover::after {
+   top: 10px;
+   left: 10px;
+   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
  }
 
 

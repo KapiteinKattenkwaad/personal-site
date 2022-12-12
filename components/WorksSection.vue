@@ -1,5 +1,5 @@
 <template>
-  <section class="py-lg-5 py-4">
+  <section keep-alive class="py-lg-5 py-4">
     <div class="container">
       <div class="row" v-if="loading">
         <div class="col-md-6 px-lg-4 mb-4">
@@ -26,12 +26,13 @@
       </div>
       <div class="row" v-else>
         <div
-          class="col-md-6 px-lg-4 mb-4"
+          class="thumb-section col-md-6 px-lg-4 mb-4"
           v-for="project in projects"
           :key="project.fields.slug"
         >
-          
+
           <div class="thumb">
+            <div class="thumb-top"></div>
             <img
               :src="project.fields.image.fields.file.url"
               :alt="project.fields.title"
@@ -79,6 +80,8 @@
 </template>
 
 <script setup lang="ts">
+import { createPinia } from "pinia";
+const pinia = createPinia()
 import { useProjectsStore } from "~/store/projects";
 const sliceValue = ref(4);
 const store = useProjectsStore();
