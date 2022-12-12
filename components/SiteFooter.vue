@@ -18,12 +18,8 @@
 
 const brands = ref([
   {
-    icon: 'instagram',
-    link: 'https://instagram.com/srestraj'
-  },
-  {
     icon: 'twitter',
-    link: 'https://twitter.com/srestraj'
+    link: 'https://twitter.com/maxstouten'
   },
   {
     icon: 'github',
@@ -31,15 +27,11 @@ const brands = ref([
   },
   {
     icon: 'codepen',
-    link: 'https://codepen.io/srestraj'
-  },
-  {
-    icon: 'dribbble',
-    link: 'https://dribbble.com/srestraj'
+    link: 'https://codepen.io/KapiteinKattenkwaad'
   },
   {
     icon: 'linkedin',
-    link: 'https://linkedin.com/in/srestraj'
+    link: 'https://linkedin.com/in/max-stouten/'
   }
 ])
 </script>

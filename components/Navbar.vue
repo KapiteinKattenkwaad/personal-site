@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-md">
     <div class="container">
-      <nuxt-link to="/" class="navbar-brand pl-sm-0 pl-3">raj.</nuxt-link>
+      <nuxt-link to="/" class="navbar-brand pl-sm-0 pl-3">max.</nuxt-link>
       <div class="col-md-auto ml-auto">
         <ul id="right-nav" class="navbar-nav right-nav">
           <li

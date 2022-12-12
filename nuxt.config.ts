@@ -4,39 +4,39 @@ import { generateSitemap } from "./sitemap";
 export default defineNuxtConfig({
   app: {
     head: {
-      title: "Raj Kumar Shrestha",
+      title: "Max Stouten",
       meta: [
         {
           hid: "description",
           name: "description",
           content:
-            "Raj Kumar Shrestha is a Frontend Developer specialized in Vue.js and Nuxt.js based in Kathmandu, Nepal.",
+            "Max Stouten is a Frontend Developer specialized in Vue.js and Nuxt.js based in Melbourne.",
         },
         {
           hid: "author",
           name: "author",
-          content: "Raj Kumar Shrestha",
+          content: "Max Stouten",
         },
         {
           hid: "og:title",
           property: "og:title",
-          content: "Raj Kumar Shrestha",
+          content: "Max Stouten",
         },
         {
           hid: "og:description",
           property: "og:description",
           content:
-            "Raj Kumar Shrestha is a Frontend Developer specialized in Vue.js and Nuxt.js based in Kathmandu, Nepal.",
+            "Max Stouten is a Frontend Developer specialized in Vue.js and Nuxt.js based in Melbourne.",
         },
         {
           hid: "og:image",
           property: "og:image",
-          content: "https://rajkshrestha1.com.np/raj-og-img.png",
+          content: "https://maxstouten.com/raj-og-img.png",
         },
         {
           hid: "og:url",
           property: "og:url",
-          content: "https://rajkshrestha1.com.np",
+          content: "https://maxstouten.com",
         },
         {
           hid: "og:type",
@@ -61,23 +61,23 @@ export default defineNuxtConfig({
         {
           hid: "twitter:title",
           name: "twitter:title",
-          content: "Raj Kumar Shrestha",
+          content: "Max Stouten",
         },
         {
           hid: "twitter:description",
           name: "twitter:description",
           content:
-            "Raj Kumar Shrestha is a Frontend Developer specialized in Vue.js and Nuxt.js based in Kathmandu, Nepal.",
+            "Max Stouten is a Frontend Developer specialized in Vue.js and Nuxt.js based in Melbourne.",
         },
         {
           hid: "twitter:image",
           name: "twitter:image",
-          content: "https://rajkshrestha1.com.np/raj-og-img.png",
+          content: "https://maxstouten.com/raj-og-img.png",
         },
         {
           hid: "twitter:image:alt",
           name: "twitter:image:alt",
-          content: "Raj Kumar Shrestha",
+          content: "Max Stouten",
         },
         {
           hid: "theme-color",
@@ -93,7 +93,7 @@ export default defineNuxtConfig({
         },
         {
           rel: "canonical",
-          href: "https://rajkshrestha1.com.np",
+          href: "https://maxstouten.com",
         },
       ],
       script: [
