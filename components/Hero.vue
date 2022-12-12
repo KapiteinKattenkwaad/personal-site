@@ -5,7 +5,10 @@
           <div class="col-md-7 my-auto">
             <div>
                 <p class="hero-text">
-                    <span>I’m Max, a Frontend Developer.&nbsp;Always interested in Graphics, I started from a little coding knowledge, went on to designing stuff and later shifted to Frontend Development. Now, I'm a full-time Vue.js Developer.&nbsp;</span>
+                    <span>I’m Max, a Frontend Developer.&nbsp;
+                     I’m a front-end web developer specializing in Javascript, HTML, and CSS/SCSS –
+                      which basically means I craft websites, web pages, emails, and apps that are responsive on mobile and desktop.
+                    </span>
                 </p>
             </div>
           </div>
@@ -23,6 +26,7 @@
    border-radius: 5px;
    position: relative;
    display: block;
+   aspect-ratio:  1 / 1;
  }
 
  img::after {

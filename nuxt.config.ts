@@ -51,12 +51,12 @@ export default defineNuxtConfig({
         {
           hid: "twitter:site",
           name: "twitter:site",
-          content: "@srestraj",
+          content: "@maxstouten",
         },
         {
           hid: "twitter:creator",
           name: "twitter:creator",
-          content: "@srestraj",
+          content: "@maxstouten",
         },
         {
           hid: "twitter:title",
@@ -68,16 +68,6 @@ export default defineNuxtConfig({
           name: "twitter:description",
           content:
             "Max Stouten is a Frontend Developer specialized in Vue.js and Nuxt.js based in Melbourne.",
-        },
-        {
-          hid: "twitter:image",
-          name: "twitter:image",
-          content: "https://maxstouten.com/raj-og-img.png",
-        },
-        {
-          hid: "twitter:image:alt",
-          name: "twitter:image:alt",
-          content: "Max Stouten",
         },
         {
           hid: "theme-color",
@@ -106,7 +96,16 @@ export default defineNuxtConfig({
   },
   ssr: true,
   target: "server",
-  modules: ["bootstrap-vue-3/nuxt", '@nuxtjs/color-mode'],
+  modules: [
+    "bootstrap-vue-3/nuxt", '@nuxtjs/color-mode',
+    [
+      '@pinia/nuxt',
+      {
+        autoImports: ['defineStore', 'acceptHMRUpdate'],
+      },
+    ],
+  ],
+  // modules: ["bootstrap-vue-3/nuxt", '@nuxtjs/color-mode'],
   css: [
     "bootstrap/dist/css/bootstrap.css",
     "~/assets/css/style.css",
