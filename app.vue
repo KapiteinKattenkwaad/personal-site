@@ -3,7 +3,6 @@
     <navbar></navbar>
     <nuxt-page></nuxt-page>
     <site-footer></site-footer>
-    <fixed-footer></fixed-footer>
   </div>
 </template>
 

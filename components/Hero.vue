@@ -10,9 +10,33 @@
             </div>
           </div>
           <div class="col-md-5">
-              <img src="~/assets/img/profile-pic.png" alt="Max Stouten Web Developer" class="img-fluid">
+              <img src="~/assets/img/profile-pic.jpeg" alt="Max Stouten Web Developer" class="img-fluid">
           </div>
         </div>
       </div>
   </section>
 </template>
+
+<style scoped>
+
+ img {
+   border-radius: 5px;
+   position: relative;
+   display: block;
+ }
+
+ img::after {
+   content: '';
+   position: absolute;
+   top: -20px;
+   left: -20px;
+   width:100%;
+   height:100%;
+   display: block;
+   background-color: yellow;
+   border-radius: 5px;
+
+ }
+
+
+</style>

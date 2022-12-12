@@ -17,6 +17,7 @@
 </template>
 <script>
 import { useProjectsStore } from "~/store/projects";
+import {useRoute} from "nuxt/app";
 export default {
   setup() {
     const store = useProjectsStore();
