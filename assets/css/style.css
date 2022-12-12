@@ -1,0 +1,325 @@
+:root {
+  --bg-color: #fff;
+  --text-color: #333;
+  --text-hover-color: #666;
+  --lighter-text: #616161;
+  --border-color: #dddddd;
+  --project-text: #333;
+  --gradient-value-1: #ececec;
+  --gradient-value-2: #f5f5f5;
+}
+.dark-mode {
+  --bg-color: #171717;
+  --text-color: #e5e5e5;
+  --text-hover-color: #999;
+  --lighter-text: #616161;
+  --border-color: #555;
+  --project-text: #333;
+  --gradient-value-1: #414141;
+  --gradient-value-2: #5f5f5f;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Calibre", sans-serif;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+*:focus {
+  outline: none;
+}
+.footer span {
+  color: var(--lighter-text);
+}
+body {
+  background-color: var(--bg-color);
+}
+.navbar-brand {
+  font-size: 2.5rem;
+  color: var(--text-color);
+}
+.navbar-brand:hover {
+  color: var(--text-hover-color);
+}
+.nav-link {
+  color: var(--text-color);
+  font-size: x-large;
+  font-weight: 400;
+  text-transform: capitalize;
+  position: relative;
+}
+.nav-link::after {
+  content: "";
+  height: 10px;
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  border-bottom: 2px solid transparent;
+  transform: scaleX(0) translateX(-50%);
+  transition: all 0.3s ease-in-out;
+}
+.nav-link:hover::after,
+.nav-link.router-link-active::after {
+  transform: scaleX(1) translateX(-50%);
+  border-bottom: 2px solid var(--text-hover-color);
+}
+.nav-link:hover,
+.nav-link:active,
+.nav-link:focus {
+  color: var(--text-hover-color);
+}
+.theme-toggler {
+  padding: 0.5rem;
+  line-height: 2;
+  cursor: pointer;
+}
+.theme-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.hero-text span {
+  font-family: "Calibre", sans-serif;
+  font-size: 1.77778rem;
+  line-height: 3rem;
+}
+
+@media (max-width: 767px) {
+  .hero-text span {
+    font-size: 1.4448rem;
+    line-height: 2.7778rem;
+  }
+}
+
+.footer {
+  border-top: 1px solid var(--border-color);
+}
+.header-text,
+.footer-text {
+  font-size: 1.77778rem;
+  line-height: 3rem;
+  font-family: "Noe Display", sans-serif;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.fixed-footer {
+  position: fixed;
+  bottom: 0;
+  background: var(--bg-color);
+  width: 100%;
+  padding: 1rem 0;
+}
+.open-source {
+  justify-content: flex-start;
+  align-content: center;
+}
+.thumb {
+  position: relative;
+  overflow: hidden;
+}
+.thumb img {
+  position: relative;
+  transform: scale(1);
+  transition: transform 0.6s ease-in-out;
+}
+
+.thumb:hover img {
+  transform: scale(1.1);
+}
+.image-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 45px;
+}
+.project-title, .project-description, .project-link span, .project-link i {
+  color: var(--project-text);
+}
+.project-link .view-all, .view-all i {
+  color: var(--text-color);
+}
+.project-title {
+  font-family: "Noe Display", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.project-description {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.project-link {
+  text-decoration: none;
+}
+.project-link span {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.project-link .fa-arrow-right {
+  display: inline-block;
+  margin-left: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+.site-link {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.project-link:hover .fa-arrow-right {
+  transform: translateX(0.5rem);
+}
+
+@media (max-width: 992px) {
+  .project-title {
+    font-size: 1.5rem;
+  }
+  .project-description {
+    font-size: 0.998rem;
+  }
+  .project-link span {
+    font-size: 1.1rem;
+  }
+  .image-text {
+    padding: 15px 20px;
+  }
+}
+.project-link .view-all {
+  font-size: 1.4rem;
+}
+
+.sub-text {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-weight: normal;
+}
+.icons-tray {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+.icons-tray .fa-brands {
+  font-size: 1.4rem;
+  line-height: 3rem;
+}
+.social-link:hover .fa-brands {
+  color: var(--text-hover-color);
+}
+/* transitions */
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
+}
+
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+  transform: translate3d(0, -25px, 0);
+}
+
+.vh-60 {
+  height: 60vh;
+}
+
+/* loading animation */
+.card {
+  background: transparent;
+}
+.card .img {
+  max-width: 100%;
+  min-height: 650px;
+}
+
+@media (max-width: 1024px) {
+  .card .img {
+    min-height: 480px;
+  }
+}
+.card .content {
+  padding: 20px 30px;
+}
+
+.card.is-loading .img,
+.card.is-loading h2,
+.card.is-loading p {
+  background: transparent;
+  background: linear-gradient(110deg, var(--gradient-value-1) 8%, var(--gradient-value-2) 18%, var(--gradient-value-1) 33%);
+  background-size: 200% 100%;
+  -webkit-animation: 1.5s shine linear infinite;
+  animation: 1.5s shine linear infinite;
+}
+.card.is-loading h2 {
+  height: 30px;
+  max-width: 75%;
+  margin-bottom: 1rem;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.card.is-loading p {
+  height: 25px;
+}
+
+@-webkit-keyframes shine {
+  to {
+    background-position-x: -200%;
+  }
+}
+
+@keyframes shine {
+  to {
+    background-position-x: -200%;
+  }
+}
+/* project page */
+.project-info h5 {
+  font-weight: 450;
+  font-style: normal;
+  font-size: 1em;
+  line-height: 1.065;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.5;
+}
+.project-info .line {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: var(--border-color);
+  margin: 1.75em 0 1.5em 0;
+}
+.project-info a {
+  text-decoration: none;
+}
+.project-info p,
+.project-info span {
+  font-weight: 450;
+  font-style: normal;
+  font-size: 1.3em;
+  line-height: 1.66;
+}
+
+.project-info span {
+  position: relative;
+}
+.project-info span::after {
+  border-bottom: 2px solid transparent;
+  bottom: 0;
+  content: "";
+  height: 10px;
+  left: 0;
+  bottom: -5px;
+  position: absolute;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+}
+.project-info span:hover::after {
+  border-bottom: 2px solid var(--text-hover-color);
+  transform: scaleX(1);
+}
