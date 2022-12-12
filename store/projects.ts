@@ -1,3 +1,4 @@
+import { createPinia } from "pinia";
 import { defineStore } from "pinia";
 
 import { createClient } from "contentful"; // for dev
@@ -33,6 +34,7 @@ export const useProjectsStore = defineStore({
       });
       if (response.items.length > 0) {
         this.projectsLoading = false
+        // @ts-ignore
         this.projectList = response.items;
       }
     },
