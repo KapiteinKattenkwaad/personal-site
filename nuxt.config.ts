@@ -1,5 +1,5 @@
-import { defineNuxtConfig } from "nuxt";
-import { generateSitemap } from "./sitemap";
+// import { defineNuxtConfig } from "nuxt";
+// import { generateSitemap } from "./sitemap";
 
 export default defineNuxtConfig({
   app: {
@@ -106,17 +106,17 @@ export default defineNuxtConfig({
   },
   ssr: true,
   target: "server",
-  modules: ["bootstrap-vue-3/nuxt", "@nuxtjs/sitemap", '@nuxtjs/color-mode'],
+  modules: ["bootstrap-vue-3/nuxt", '@nuxtjs/color-mode'],
   css: [
     "bootstrap/dist/css/bootstrap.css",
     "~/assets/css/style.css",
     "~/assets/css/fonts.css",
   ],
-  hooks: {
-    "build:before": () => {
-      generateSitemap();
-    },
-  },
+  // hooks: {
+  //   "build:before": () => {
+  //     // generateSitemap();
+  //   },
+  // },
   vite: {
     optimizeDeps: {
       exclude: ["class-validator"],
