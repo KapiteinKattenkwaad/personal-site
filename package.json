@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@nuxtjs/sitemap": "^2.4.0",
-    "@pinia/nuxt": "0.4.6",
+    "@pinia/nuxt": "0.4.5",
     "autoprefixer": "10.4.5",
     "axios": "^0.27.2",
     "bootstrap": "^5.1.3",
