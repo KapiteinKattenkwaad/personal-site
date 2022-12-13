@@ -1,9 +1,8 @@
 <template>
   <div>
-    Testing
-<!--    <navbar></navbar>-->
-<!--    <nuxt-page></nuxt-page>-->
-<!--    <site-footer></site-footer>-->
+    <navbar></navbar>
+    <nuxt-page></nuxt-page>
+    <site-footer></site-footer>
   </div>
 </template>
 

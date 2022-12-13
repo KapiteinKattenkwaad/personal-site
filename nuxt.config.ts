@@ -98,12 +98,12 @@ export default defineNuxtConfig({
   target: "server",
   modules: [
     "bootstrap-vue-3/nuxt", '@nuxtjs/color-mode',
-    // [
-    //   '@pinia/nuxt',
-    //   {
-    //     autoImports: ['defineStore', 'acceptHMRUpdate'],
-    //   },
-    // ],
+    [
+      '@pinia/nuxt',
+      {
+        autoImports: ['defineStore', 'acceptHMRUpdate'],
+      },
+    ],
   ],
   // modules: ["bootstrap-vue-3/nuxt", '@nuxtjs/color-mode'],
   css: [
