@@ -23,7 +23,7 @@
 <script lang="ts" setup>
   const nav = ref([
     {
-      text: 'works',
+      text: 'work',
       link: '/works'
     }
   ])
