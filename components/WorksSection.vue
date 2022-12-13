@@ -26,7 +26,7 @@
       </div>
       <div class="row" v-else>
         <div
-          class="thumb-section col-md-6 px-lg-4 mb-4"
+          class="thumb-section col-md-6 px-lg-4 mb-4 col-xl-4"
           v-for="project in projects"
           :key="project.fields.slug"
         >
@@ -37,6 +37,7 @@
               :src="project.fields.image.fields.file.url"
               :alt="project.fields.title"
               class="img-fluid"
+              loading="lazy"
             />
             <div class="image-text">
               <h2 class="project-title">{{ project.fields.title }}</h2>
@@ -83,7 +84,7 @@
 import { createPinia } from "pinia";
 const pinia = createPinia()
 import { useProjectsStore } from "~/store/projects";
-const sliceValue = ref(4);
+const sliceValue = ref(3);
 const store = useProjectsStore();
 store.getProjects();
 

@@ -187,7 +187,14 @@ body {
   position: absolute;
   top: 1rem;
   right: 1rem;
+  z-index: 3;
+  transition: transform .25s ease-in;
 }
+
+.site-link:hover {
+  transform: scale(1.03);
+}
+
 .project-link:hover .fa-arrow-right {
   transform: translateX(0.5rem);
 }
