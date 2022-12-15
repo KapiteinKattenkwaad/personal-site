@@ -12,7 +12,7 @@
 
 <script setup lang="ts">
 useHead({
-  title: 'Work',
+  title: 'Work | Max Stouten',
   meta: [
     {
       name: 'description',

@@ -58,7 +58,6 @@ body {
     color: var(--text-color);
     font-size: x-large;
     font-weight: 400;
-    text-transform: capitalize;
     position: relative;
 }
 
@@ -120,7 +119,6 @@ body {
     line-height: 3rem;
     font-family: "Noe Display", sans-serif;
     font-weight: bold;
-    text-transform: capitalize;
 }
 
 .fixed-footer {
@@ -171,6 +169,8 @@ body {
     background-color: var(--beige-pink);
 }
 
+
+
 .thumb-section:nth-child(uneven) .thumb-top {
     background-color: var(--beige-blue);
 }
@@ -214,7 +214,6 @@ body {
 .project-link span {
     font-size: 1.2rem;
     font-weight: 600;
-    text-transform: capitalize;
 }
 
 .project-link .fa-arrow-right {
@@ -240,12 +239,17 @@ body {
 }
 
 @media (max-width: 992px) {
+    .thumb-top {
+        height: 210px;
+    }
+
     .project-title {
         font-size: 1.5rem;
     }
 
     .project-description {
-        font-size: 0.998rem;
+        font-size: 1.1rem;
+        margin-top: 1rem;
     }
 
     .project-link span {

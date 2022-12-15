@@ -4,7 +4,7 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      title: "Max Stouten",
+      title: "Max Stouten | Portfolio",
       meta: [
         {
           hid: "description",

@@ -13,7 +13,7 @@
             </div>
           </div>
           <div class="col-md-5">
-            <div class="img-wrapper">
+            <div class="img-wrapper my-4 my-md-0 ms-md-auto">
               <img src="~/assets/img/profile-pic.jpeg" alt="Max Stouten Web Developer" class="img-fluid">
             </div>
           </div>
@@ -29,10 +29,13 @@
    position: relative;
    display: block;
    aspect-ratio:  1 / 1;
+   max-height: 360px;
  }
 
  .img-wrapper {
    position: relative;
+   max-height: 360px;
+   width: fit-content;
 
  }
 
