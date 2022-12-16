@@ -166,7 +166,7 @@ body {
 .thumb-top {
     width: 100%;
     height: 300px;
-    background-color: var(--beige-pink);
+    background-color: var(--beige-green);
 }
 
 
@@ -176,7 +176,7 @@ body {
 }
 
 .thumb-section:nth-child(even) .thumb-top {
-    background-color: var(--beige-green);
+    background-color: var(--beige-pink);
 }
 
 .thumb-section:nth-child(2) .thumb-top {

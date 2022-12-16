@@ -12,7 +12,7 @@
 				</loading-card>
 			</div>
 			<div class="row justify-content-center mt-4 py-lg-5 py-4">
-				<div class="col-md-4 col-12 mb-3 project-info">
+				<div class="col-xl-4 col-md-6 col-12 mb-3 project-info">
 					<loading-card>
 						<template #paragraph>
 							<p></p>
@@ -25,7 +25,7 @@
 						</template>
 					</loading-card>
 				</div>
-				<div class="col-md-4 col-12 mb-3 project-info">
+				<div class="col-xl-4 col-md-6 col-12 mb-3 project-info">
 					<loading-card>
 						<template #paragraph>
 							<p></p>
@@ -38,7 +38,7 @@
 						</template>
 					</loading-card>
 				</div>
-				<div class="col-md-4 col-12 mb-3 project-info">
+				<div class="col-xl-4 col-md-6 col-12 mb-3 project-info">
 					<loading-card>
 						<template #paragraph>
 							<p></p>

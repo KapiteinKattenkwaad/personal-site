@@ -5,9 +5,13 @@
           <div class="col-md-7 my-auto">
             <div>
                 <p class="hero-text">
-                    <span>I’m Max,
-                      a front-end web developer specializing in Javascript, HTML, and CSS/SCSS –
-                      which basically means I craft websites, web pages, emails, and apps that are responsive on mobile and desktop.
+                    <span>
+                      Hi, my name is Max and I am a frontend web developer
+                      with a focus on Javascript, HTML, and CSS/SCSS.
+<!--                      With my expertise in these technologies, I am able to create websites,-->
+<!--                      web pages, emails, and apps that are both visually appealing and responsive on mobile and desktop devices.-->
+                      My goal is to craft user-facing web experiences that are intuitive, easy to use, and
+                      accessible.
                     </span>
                 </p>
             </div>

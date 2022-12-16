@@ -29,7 +29,7 @@ export const useProjectsStore = defineStore({
       });
       const response = await client.getEntries({
         content_type: "projects",
-        order: "-sys.createdAt",
+        order: "sys.createdAt",
         limit: 100,
       });
       if (response.items.length > 0) {
