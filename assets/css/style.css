@@ -117,7 +117,7 @@ body {
 .footer-text {
     font-size: 1.77778rem;
     line-height: 3rem;
-    font-family: "Noe Display", sans-serif;
+    font-family: serif;
     font-weight: bold;
 }
 
@@ -196,7 +196,7 @@ body {
 }
 
 .project-title {
-    font-family: "Noe Display", sans-serif;
+    font-family: serif;
     font-weight: bold;
     font-size: 2rem;
 }
